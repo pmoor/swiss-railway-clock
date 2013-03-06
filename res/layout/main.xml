@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Swiss Railway Clock - A clock app for Android.
+  Copyright (C) 2011  Patrick Moor <patrick@moor.ws>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main">
+    <AbsoluteLayout android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_width="wrap_content" android:id="@+id/clock">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/background" android:src="@drawable/clock_background"></ImageView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_hour" android:id="@+id/hour"></ImageView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/minute" android:src="@drawable/clock_minute"></ImageView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_second" android:id="@+id/second"></ImageView>
+    </AbsoluteLayout>
+</RelativeLayout>
